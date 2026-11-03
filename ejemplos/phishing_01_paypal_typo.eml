@@ -1,0 +1,23 @@
+Return-Path: <rebote@envios-masivos.test>
+Received: from mx.example.org (mx.example.org [192.0.2.10])
+	by buzon.example.org; Mon, 2 Nov 2026 09:00:00 +0000
+Authentication-Results: buzon.example.org;
+	spf=fail smtp.mailfrom=rebote@envios-masivos.test;
+	dkim=none;
+	dmarc=fail header.from=paypa1.example
+From: PayPal <servicio@paypa1.example>
+Reply-To: soporte.cuentas@correo-gratis.test
+To: cliente@example.org
+Subject: URGENTE: Su cuenta ha sido suspendida
+Date: Mon, 2 Nov 2026 03:12:00 +0000
+MIME-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Estimado usuario:
+
+Detectamos actividad inusual y su cuenta ha sido suspendida.
+Verifique su cuenta en las próximas 24 horas o perderá el acceso:
+
+http://paypa1.example/login/verificar
+
+Equipo de seguridad

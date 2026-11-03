@@ -37,6 +37,12 @@ def analizar_correo(c: Correo, archivo: str = "") -> Resultado:
         senales.extend(det.detectar(c))
     asignar_pesos(senales)
     senales.sort(key=lambda s: -s.peso)
+    # Una señal repetida (mismo código) solo suma una vez: las demás quedan en 0.
+    contadas: set[str] = set()
+    for s in senales:
+        if s.codigo in contadas:
+            s.peso = 0
+        contadas.add(s.codigo)
     p = calcular(senales)
     return Resultado(archivo, c.asunto, c.de, p, nivel(p), senales)
 

@@ -1,0 +1,20 @@
+Return-Path: <bounce@mailer-promo.test>
+Received: from mx.example.org (mx.example.org [192.0.2.10])
+	by buzon.example.org; Mon, 2 Nov 2026 09:00:00 +0000
+Authentication-Results: buzon.example.org;
+	spf=pass smtp.mailfrom=bounce@mailer-promo.test;
+	dkim=pass header.d=mailer-promo.test;
+	dmarc=fail header.from=netflix-billing.test
+From: Netflix <billing@netflix-billing.test>
+To: user@example.org
+Subject: Action required: your account has been suspended
+Date: Mon, 2 Nov 2026 07:00:00 +0000
+MIME-Version: 1.0
+Content-Type: text/html; charset=utf-8
+
+<html><body>
+<p>We were unable to process your last payment. Your account has been suspended.</p>
+<p>Please update your payment details immediately to avoid losing access:</p>
+<p><a href="https://bit.ly/3xEjemplo">Update payment</a></p>
+<p><a href="http://netflix.com@198.51.100.23/billing">netflix.com/billing</a></p>
+</body></html>

@@ -1,0 +1,22 @@
+Return-Path: <director.general@correo-gratis.test>
+Received: from mx.example.org (mx.example.org [192.0.2.10])
+	by buzon.example.org; Mon, 2 Nov 2026 09:00:00 +0000
+Authentication-Results: buzon.example.org;
+	spf=pass smtp.mailfrom=director.general@correo-gratis.test;
+	dkim=pass header.d=correo-gratis.test;
+	dmarc=fail header.from=empresaejemplo.test
+From: Director General <director@empresaejemplo.test>
+Reply-To: <director.general@correo-gratis.test>
+To: tesoreria@empresaejemplo.test
+Subject: Transferencia urgente y confidencial
+Date: Mon, 2 Nov 2026 08:45:00 +0000
+MIME-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Hola:
+
+Necesito que realices hoy mismo una transferencia a un proveedor nuevo.
+Es confidencial, no lo comentes con nadie hasta que se cierre la operación.
+Respóndeme a este correo y te paso los datos bancarios.
+
+Gracias.

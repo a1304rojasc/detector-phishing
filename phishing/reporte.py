@@ -35,7 +35,7 @@ def texto(resultados: list[Resultado]) -> str:
         if not r.senales:
             lineas.append("  Sin señales de phishing detectadas.")
         for s in r.senales:
-            lineas.append(f"  [+{s.peso:>2}] {s.titulo} ({s.codigo})")
+            lineas.append(f"  [+{s.peso:>2}] {s.titulo} ({s.codigo})" + ("  · repetida, no suma" if s.peso == 0 and s.codigo != "URGENCIA" else ""))
             lineas.append(f"         Evidencia : {_limpio(s.evidencia)}")
             lineas.append(f"         Por qué   : {s.explicacion}")
     if len(resultados) > 1:

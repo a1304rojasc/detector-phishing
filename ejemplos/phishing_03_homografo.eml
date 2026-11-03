@@ -1,0 +1,14 @@
+Received: from mx.example.org (mx.example.org [192.0.2.10])
+	by buzon.example.org; Mon, 2 Nov 2026 09:00:00 +0000
+From: =?utf-8?q?Soporte_Microsoft?= <no-reply@xn--microsft-sbh.example>
+To: luis@example.org
+Subject: Su buzón está lleno: acción requerida
+Date: Mon, 2 Nov 2026 05:05:00 +0000
+MIME-Version: 1.0
+Content-Type: text/html; charset=utf-8
+
+<html><body>
+<p>Su buzón de Outlook alcanzó el límite. Los mensajes nuevos serán rechazados.</p>
+<p><a href="https://rnicrosoft.example/office365/ampliar">Ampliar almacenamiento</a></p>
+<p><a href="https://xn--microsft-sbh.example/login">Iniciar sesión en Microsoft</a></p>
+</body></html>

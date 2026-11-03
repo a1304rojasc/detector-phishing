@@ -1,0 +1,31 @@
+Return-Path: <boletin@correo.tiendaejemplo.test>
+Received: from mx.example.org (mx.example.org [192.0.2.10])
+	by buzon.example.org; Mon, 2 Nov 2026 09:00:00 +0000
+Authentication-Results: buzon.example.org;
+	spf=pass smtp.mailfrom=boletin@correo.tiendaejemplo.test;
+	dkim=pass header.d=tiendaejemplo.test;
+	dmarc=pass header.from=tiendaejemplo.test
+From: Tienda Ejemplo <ofertas@tiendaejemplo.test>
+Reply-To: Atención Tienda Ejemplo <atencion@tiendaejemplo.test>
+To: cliente@example.org
+Subject: Novedades de la semana en Tienda Ejemplo
+Date: Mon, 2 Nov 2026 10:00:00 +0000
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="LIMITE"
+
+--LIMITE
+Content-Type: text/plain; charset=utf-8
+
+Novedades de la semana. Ver en la web: https://www.tiendaejemplo.test/novedades
+
+--LIMITE
+Content-Type: text/html; charset=utf-8
+
+<html><body>
+<h1>Novedades de la semana</h1>
+<p>Descubre los nuevos productos de otoño.</p>
+<p><a href="https://www.tiendaejemplo.test/novedades?utm=boletin">Ver novedades</a></p>
+<p>Visítanos en <a href="https://www.tiendaejemplo.test/">www.tiendaejemplo.test</a></p>
+<p><a href="https://www.tiendaejemplo.test/baja">Darse de baja</a></p>
+</body></html>
+--LIMITE--

@@ -1,0 +1,20 @@
+Return-Path: <alertas@bancoejemplo-seguridad.test>
+Received: from mx.example.org (mx.example.org [192.0.2.10])
+	by buzon.example.org; Mon, 2 Nov 2026 09:00:00 +0000
+Authentication-Results: buzon.example.org;
+	spf=pass smtp.mailfrom=alertas@bancoejemplo-seguridad.test;
+	dkim=none;
+	dmarc=none
+From: "Banco Ejemplo" <alertas@bancoejemplo-seguridad.test>
+To: cliente@example.org
+Subject: Acceso no autorizado detectado
+Date: Mon, 2 Nov 2026 04:40:00 +0000
+MIME-Version: 1.0
+Content-Type: text/html; charset=utf-8
+
+<html><body>
+<p>Detectamos un acceso no autorizado a su banca en línea.</p>
+<p>Confirme sus datos ingresando a
+<a href="http://192.0.2.45/bancoejemplo/login.php">https://www.bancoejemplo.test/acceso</a></p>
+<p><a href="http://192.0.2.45/bancoejemplo/">Banco Ejemplo - Centro de seguridad</a></p>
+</body></html>

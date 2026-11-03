@@ -1,0 +1,24 @@
+Return-Path: <avisos@bancoejemplo.test>
+Received: from mx.example.org (mx.example.org [192.0.2.10])
+	by buzon.example.org; Mon, 2 Nov 2026 09:00:00 +0000
+Authentication-Results: buzon.example.org;
+	spf=pass smtp.mailfrom=avisos@bancoejemplo.test;
+	dkim=pass header.d=bancoejemplo.test;
+	dmarc=pass header.from=bancoejemplo.test
+From: Banco Ejemplo <avisos@bancoejemplo.test>
+To: Cliente <cliente@example.org>
+Subject: Su estado de cuenta de octubre ya está disponible
+Date: Mon, 2 Nov 2026 09:00:00 +0000
+Message-ID: <estado-1001@bancoejemplo.test>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: 8bit
+
+Estimado cliente:
+
+Su estado de cuenta correspondiente a octubre ya puede consultarse en la
+banca en línea: https://www.bancoejemplo.test/estados
+
+Le recordamos que nunca le pediremos su contraseña por correo.
+
+Banco Ejemplo

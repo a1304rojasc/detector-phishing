@@ -20,7 +20,7 @@ _FALLA = {"fail", "softfail", "permerror", "temperror"}
 
 
 def _dominios(ar: str, clave: str) -> list[str]:
-    return [d.lower().strip(".>") for d in re.findall(rf"{clave}\s*=\s*\"?[^\s;@\"]*@?([\w.-]+)", ar, re.I)]
+    return [d.lower().strip(".>") for d in re.findall(rf"{clave}\s*=\s*\"?(?:[^\s;@\"]*@)?([\w.-]+)", ar, re.I)]
 
 
 def detectar(c: Correo) -> list[Senal]:
@@ -58,8 +58,6 @@ def detectar(c: Correo) -> list[Senal]:
         res = vistos.get(mec)
         if res in _FALLA:
             senales.append(Senal(cod, tit, f"{mec}={res} — {evid}", exp))
-        elif res in (None, "none", "neutral") and mec == "dmarc" and vistos.get("spf") not in (None, "pass"):
-            senales.append(Senal(cod, tit, f"dmarc={res or 'ausente'} — {evid}", exp))
 
     # Alineación: dominios autenticados vs dominio del From.
     if org_from:

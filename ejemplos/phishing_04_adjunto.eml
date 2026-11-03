@@ -1,0 +1,30 @@
+Return-Path: <facturacion@proveedor-ejemplo.test>
+Received: from mx.example.org (mx.example.org [192.0.2.10])
+	by buzon.example.org; Mon, 2 Nov 2026 09:00:00 +0000
+Received-SPF: softfail (buzon.example.org: transitioning domain of proveedor-ejemplo.test does not designate 198.51.100.7 as permitted sender)
+From: Facturación <facturacion@proveedor-ejemplo.test>
+To: contabilidad@example.org
+Subject: Factura vencida - pago inmediato
+Date: Mon, 2 Nov 2026 06:30:00 +0000
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="ADJ"
+
+--ADJ
+Content-Type: text/plain; charset=utf-8
+
+Adjuntamos la factura con pago vencido. Realice el pago inmediato hoy mismo
+para evitar el cargo por mora. Abra el archivo adjunto para ver el detalle.
+
+--ADJ
+Content-Type: application/octet-stream; name="Factura_2026-10.pdf.exe"
+Content-Disposition: attachment; filename="Factura_2026-10.pdf.exe"
+Content-Transfer-Encoding: base64
+
+Tk8gRVMgVU4gRUpFQ1VUQUJMRSBSRUFMIC0gYXJjaGl2byBkZSBwcnVlYmE=
+--ADJ
+Content-Type: text/html; name="detalle_pago.html"
+Content-Disposition: attachment; filename="detalle_pago.html"
+Content-Transfer-Encoding: base64
+
+PGh0bWw+PGJvZHk+Zm9ybXVsYXJpbyBkZSBlamVtcGxvIGlub2ZlbnNpdm88L2JvZHk+PC9odG1sPg==
+--ADJ--
