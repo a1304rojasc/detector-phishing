@@ -1,5 +1,7 @@
 # Detector de phishing
 
+[![tests](https://github.com/a1304rojasc/detector-phishing/actions/workflows/tests.yml/badge.svg)](https://github.com/a1304rojasc/detector-phishing/actions/workflows/tests.yml)
+
 Herramienta en Python (solo librería estándar) que analiza correos en formato `.eml`, busca señales de phishing y asigna un **puntaje de riesgo de 0 a 100** con su nivel (**bajo / medio / alto**). Para cada señal muestra la **evidencia** (qué encabezado, enlace o texto la provocó) y una explicación corta.
 
 ## ¿Qué es el phishing?
